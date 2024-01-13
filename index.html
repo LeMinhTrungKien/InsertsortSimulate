@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sắp xếp chèn trực tiếp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <audio id="errorSound">
+      <source src="js/showerror.mp3" type="audio/mpeg">
+    </audio>
+      </head>
+  <body>
+    <div class="body">
+    <h1>Sắp xếp chèn trực tiếp</h1>
+    <div class="container"></div>
+    <audio id="myAudio" loop>
+      <audio id="backgroundAudio" src="js/background.mp3" loop></audio>
+      Your browser does not support the audio element.
+    </audio>
+    <div class="Simulate">
+      <div class="array-display" id="array-container"></div>
+      <div class="algorithm-info" id="algorithm-info"></div>
+      <div class="error-message" id="error-message"></div>
+      <div class="control-buttons"></div>
+    </div>
+    <label for="toggleSound">Bật/Tắt âm thanh</label>
+    <input type="checkbox" id="toggleSound">
+<div class="input-container">
+  <input type="text" id="input-array" placeholder="Nhập vào các phần tử ngăn cách nhau bởi khoảng trắng:">
+  <button id="start-button">
+    <img src="assets/start.png" alt="Start Sorting"width="40" height="40">
+    <button id="reset-button" onclick="handleResetClick()">
+      <img src="assets/reset.png" alt="Reset" width="40" height="40">
+    </button>    
+</div>
+    <div class="Code_Text">
+     <div class="preText" id="TextCode">
+        <pre id="line1" class="code">	def insertion_sort(arr): </pre>
+        <pre id="line2" class="code">	n = len(arr)</pre>
+        <pre id="line3" class="code">    	for i in range(1, n):</pre>
+        <pre id="line4" class="code">       		key = arr[i]  # phần tử hiện tại cần chèn</pre>
+        <pre id="line5" class="code">       		j = i - 1  # Vị trí của phần tử trước đó</pre>
+        <pre id="line6" class="code">     		# Di chuyển các phần tử lớn hơn key về phía sau</pre>
+        <pre id="line7" class="code">    		while j >= 0 and arr[j] > key:</pre>
+        <pre id="line8" class="code">    			arr[j + 1] = arr[j]</pre>
+        <pre id="line9" class="code">			j -= 1</pre>
+        <pre id="line10" class="code">			arr[j + 1] = key  # Chèn key vào vị trí đúng</pre>
+        <pre id="line11" class="code">			i=i+1</pre>
+      </div> 
+    </div>
+    </div>    
+  </body>
+</html>
