@@ -6,8 +6,8 @@
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 0;
   padding: 20px;
 }
 
@@ -18,7 +18,7 @@
 .input-container label {
   display: block;
   margin-bottom: 5px;
-  background-color: transparent; /* Set the background color to transparent */
+  background-color: transparent; 
 }
 
 .input-container input[type="text"] {
@@ -26,14 +26,14 @@
   padding: 5px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 10px; /* Độ cong của góc */
+  border-radius: 10px;
   white-space: nowrap;
 }
 
 .input-container button {
   width: 40px;
   height: 40px;
-  background-color: transparent; /* Set the background color to transparent */
+  background-color: transparent; 
   color: #fff;
   border: none;
   cursor: pointer;
@@ -58,8 +58,8 @@
 }
 
 .array-element img {
-  width: auto; /* Set the desired constant width for the image */
-  height: auto; /* Automatically adjust the height while maintaining the aspect ratio */
+  width: auto; 
+  height: auto; 
 }
 
 .array-display .current-element {
