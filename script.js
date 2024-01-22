@@ -116,6 +116,12 @@ async function highligtText(lineNum = 1) {
 startButton.addEventListener('click', async () => {
   const inputArray = inputArrayElement.value.trim();
 
+  // Kiểm tra xem có dấu cách liên tiếp không
+  if (/\s{2,}/.test(inputArray)) {
+    showError('Vui lòng nhập lại mảng');
+    return;
+  }
+
   if (!inputArray) {
     showError('Vui lòng nhập mảng vào đây.');
     return;
